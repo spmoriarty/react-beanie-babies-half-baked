@@ -21,12 +21,31 @@ body {
   width: 200px;
 }
 
+.beanie-div {
+  width: 100%;
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+}
+
+
 .beanies {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px -5px black;
+  width: 60%;
+  
+}
+
+.beanies img {
+  width: 100px;
 }
 
 .beanie-detail {
@@ -39,6 +58,7 @@ body {
   cursor: pointer;
   width: 400px;
 }
+
 
 .beanie-detail .beanie-data {
   display: grid;
