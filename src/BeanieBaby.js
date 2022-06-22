@@ -2,10 +2,11 @@ import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { getBeanieBabies } from './services/fetch-utils';
+import BeaniesList from './BeaniesList';
 
-export default function BeanieBaby({ beanieBaby }) {
+export default function BeanieBaby() {
+  const [beanieBaby, setBeanieBaby] = useState([]);
   const params = useParams();
-  const [beanieBaby, setBeanieBaby] = useState({});
 
   useEffect(() => {
     async function fetchBeanie() {
@@ -16,9 +17,10 @@ export default function BeanieBaby({ beanieBaby }) {
   }, [params.id]);
 
   return (
-<div>
-  <h2>{beanieBaby.title}</h2>
-</div>
+    <div>
+      <BeaniesList beanieBaby={beanieBaby} />
+  
+    </div>
     // this should contain a react-router-dom Link to the detail page for this particular beanie baby.
     // it should also render the beanie baby's image and show the beanie baby's name
     
