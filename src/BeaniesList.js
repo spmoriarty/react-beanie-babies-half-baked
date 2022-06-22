@@ -2,7 +2,7 @@
 
 export default function BeaniesList({ beanieBabies }) {
   return (
-    <div>
+    <div className="beanie-div">
       {beanieBabies.map((beanieBabies, i) => 
         <div className='beanies' key={beanieBabies.title + i + beanieBabies.id}>
           <h2>{beanieBabies.title}</h2>
