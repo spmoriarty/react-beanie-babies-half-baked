@@ -4,5 +4,8 @@ export default function BeaniesList({ beanieBabies }) {
   return (
     <div className='beanies'>
       <h2>{beanieBabies.title}</h2>
-    </div>);
+      <p>{beanieBabies.image}</p>
+      <BeanieBaby BeanieBaby={BeanieBaby} />
+    </div>
+  );
 }
