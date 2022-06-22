@@ -2,11 +2,11 @@
 
 export default function BeaniesList({ beanieBabies }) {
   return (
-    <div className='beanies'>
+    <div>
       {beanieBabies.map((beanieBabies, i) => 
-        <div key={beanieBabies.title + i + beanieBabies.id}>
+        <div className='beanies' key={beanieBabies.title + i + beanieBabies.id}>
           <h2>{beanieBabies.title}</h2>
-          <p>{beanieBabies.image}</p>
+          <img src={beanieBabies.image}/>
         </div>)
       }
     </div>

@@ -25,8 +25,13 @@ body {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.beanies img {
+  width: 22%;
 }
 
 .beanie-detail {
@@ -39,6 +44,7 @@ body {
   cursor: pointer;
   width: 400px;
 }
+
 
 .beanie-detail .beanie-data {
   display: grid;
